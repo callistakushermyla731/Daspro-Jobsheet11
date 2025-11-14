@@ -10,3 +10,8 @@ Pertanyaan percobaan 1
 
 PERCOBAAN 2:
 1. Pengisian elemen array dari Scanner tidak wajib dimulai dari indeks 0. Program dapat mengisi elemen pada indeks mana saja selama indeks tersebut masih berada dalam batas ukuran array.
+
+PERCOBAAN 3:
+2. Arrays.toString() berfungsi untuk menampilkan isi array dalam bentuk string yang rapi, menjadi satu baris teks yang mudah dibaca.
+3. 0
+5. Tidak dapat dimodifikasi, harus membuat array baru dengan ukuran berbeda.
