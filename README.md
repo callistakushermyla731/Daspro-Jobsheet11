@@ -7,3 +7,6 @@ Pertanyaan percobaan 1
 11. 3
 12. 1
 13. Menggabungkan beberapa String menjadi satu String.
+
+PERCOBAAN 2:
+1. Pengisian elemen array dari Scanner tidak wajib dimulai dari indeks 0. Program dapat mengisi elemen pada indeks mana saja selama indeks tersebut masih berada dalam batas ukuran array.
