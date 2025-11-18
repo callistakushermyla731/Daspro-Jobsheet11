@@ -22,37 +22,43 @@ public class BioskopWithScanner05 {
                 System.out.print("Masukkan nama: ");
                 nama=sc.nextLine();
 
-                while (true) {
-                    System.out.print("Masukkan baris: ");
-                        baris = sc.nextInt();
+                    while (true) {
+                        System.out.print("Masukkan baris: ");
+                            baris = sc.nextInt();
 
-                        if (baris < 1 || baris > penonton.length) {
-                            System.out.println("Baris tidak tersedia. Pilih 1 sampai " + penonton.length);
-                        } else {
-                            break;
-                        }
-                }
+                            if (baris < 1 || baris > penonton.length) {
+                                System.out.println("Baris tidak tersedia. Pilih 1 sampai " + penonton.length);
+                            } else {
+                                break;
+                            }
+                    }
                 
-                while (true) {
-                    System.out.print("Masukkan kolom: ");
-                    kolom = sc.nextInt();
+                    while (true) {
+                        System.out.print("Masukkan kolom: ");
+                        kolom = sc.nextInt();
 
-                    if (kolom < 1 || kolom > penonton[0].length) {
-                        System.out.println("Kolom tidak tersedia. Pilih 1 sampai " + penonton[0].length);
-                        } else {
-                            break;
+                        if (kolom < 1 || kolom > penonton[0].length) {
+                            System.out.println("Kolom tidak tersedia. Pilih 1 sampai " + penonton[0].length);
+                            continue;
+                        }
+
+                        if (penonton[baris-1][kolom-1] != null) {
+                            System.out.println("Kursi sudah terisi. Pilih kursi lain.");
+                            continue;
+                        }
+                        break;
                     }
-                }
 
-                sc.nextLine();
-                penonton[baris-1][kolom-1] = nama;
+                    sc.nextLine();
+                    penonton[baris-1][kolom-1] = nama;
 
-                System.out.print("Input penonton lainnya? (y/n): ");
-                next=sc.nextLine();
+                    System.out.print("Input penonton lainnya? (y/n): ");
+                    next=sc.nextLine();
 
-                    if (next.equalsIgnoreCase("n")) {
-                    break;
+                    if  (next.equalsIgnoreCase("n")) {
+                        break;
                     }
+
                 }
             }
 
