@@ -68,7 +68,7 @@ public class BioskopWithScanner05 {
                     for(int j = 0; j < penonton[i].length; j++){
                         String isi = penonton[i][j];
                         if (isi == null) {
-                            isi = "-";
+                            isi = "***";
                         }
                         System.out.print(isi + " ");
                     }
